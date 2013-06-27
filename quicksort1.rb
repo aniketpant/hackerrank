@@ -11,6 +11,7 @@ def  partition( ar)
   puts "\n"
 end
 # Tail starts here
-cnt = gets.to_i;
-ar = STDIN.gets.chomp.split(" ");
-partition(ar);
+cnt = gets.to_i
+ar = STDIN.gets.chomp.split(" ")
+
+partition( ar )
