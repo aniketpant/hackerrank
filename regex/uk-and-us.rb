@@ -7,7 +7,7 @@ def uk_and_us( lines, tests)
     us_spelling = test
     uk_spelling = /\w+(?=ze)/.match(test).to_s + "se"
     lines.each do |line|
-      match = line.scan(/(#{us_spelling}|#{uk_spelling})/)
+      match = line.scan(/\b(#{us_spelling}|#{uk_spelling})\b/)
       count += match.size if match != nil
     end
     puts count
